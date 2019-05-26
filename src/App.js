@@ -57,11 +57,10 @@ class App extends React.Component {
         <header className="App-header">
           <Type types={Object.keys(this.state.restaurants)}/>
 
-          <h3>Pick a Restaurant type to filter:</h3>
+          <h3>Filter by restaurant type: </h3>
           <select
             onChange={this._filterType}
           >
-
             <option value="american">Amer</option>
             <option value="mediterranean">Med</option>
             <option value="mexican">Mexican</option>
@@ -76,8 +75,6 @@ class App extends React.Component {
   }
 
   _filterType = (e) => {
-    console.log('select has been changed!')
-    console.log(e.target.value);
     this.setState({
       type: e.target.value,
       restaurant: ''
