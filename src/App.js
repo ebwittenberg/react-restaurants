@@ -61,9 +61,9 @@ class App extends React.Component {
           <select
             onChange={this._filterType}
           >
-            <option value="american">American</option>
-            <option value="mediterranean">Mediterranean</option>
-            <option value="mexican">Mexican food</option>
+            <option value="american">Amer</option>
+            <option value="mediterranean">Med</option>
+            <option value="mexican">Mexican</option>
           </select>
 
           <RestaurantByType onClick={this._handleClick} type={this.state.type} allRestaurants={this.state.restaurants}/>
