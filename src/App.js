@@ -57,7 +57,7 @@ class App extends React.Component {
         <header className="App-header">
           <Type types={Object.keys(this.state.restaurants)}/>
 
-          <h3>Pick a restaurant type to filter:</h3>
+          <h3>Pick a Restaurant type to filter:</h3>
           <select
             onChange={this._filterType}
           >
